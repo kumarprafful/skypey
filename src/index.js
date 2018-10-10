@@ -12,7 +12,7 @@ function fancyLog() {
 
 const render = () => {
   fancyLog();
-  ReactDOM.render(<App />, document.getElementById('root'));
+  return ReactDOM.render(<App />, document.getElementById('root'));
 };
 render();
 store.subscribe(render);
