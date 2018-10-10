@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/main.css'
 
 import Empty from './empty';
-import ChatWindow from './chatWindow';
+import ChatWindow from '../containers/chatWindow';
 
 const Main = ({user, activeUserId}) => {
   const renderMainContent = () => {
@@ -14,9 +14,7 @@ const Main = ({user, activeUserId}) => {
     }
   };
 
-  return(
-    <main className="main">{renderMainContent()}</main>
-  );
+  return <main className="main">{renderMainContent()}</main>
 };
 
 export default Main;

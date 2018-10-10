@@ -6,12 +6,13 @@ import Main from './components/main';
 
 import store from './store';
 
-const { contacts, user, activeUserId }  = store.getState();
 
-console.log("CONTACTS " + store.getState().contacts);
+// console.log("CONTACTS " + activeUserId);
 
 class App extends Component {
   render() {
+    const { contacts, user, activeUserId }  = store.getState();
+    
     return (
       <div className="App">
         <Sidebar contacts={_.values(contacts)} />
@@ -21,5 +22,6 @@ class App extends Component {
     );
   }
 }
+
 
 export default App;
