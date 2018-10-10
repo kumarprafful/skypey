@@ -1,0 +1,31 @@
+.user{
+  display:flex;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.user:hover{
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.user_pic{
+  width: 50px;
+  border-radius: 50%;
+}
+
+.user_details{
+  display: none;
+}
+
+/* not for small devices */
+@media (min-width: 576px){
+  .user_details{
+    display: block;
+    padding:0 0 0 1rem;
+  }
+  .user_details_name{
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+  }
+}
